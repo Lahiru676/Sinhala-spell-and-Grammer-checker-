@@ -1,0 +1,28 @@
+{
+    "training_data": [
+        {
+            "incorrect_sentence": "මම කෑම කමු",
+            "correct_sentence": "මම කෑම කමි",
+            "error_details": {
+                "type": "Verb Agreement Error",
+                "explanation": "Verb 'කමු' does not match the subject 'මම'. It should end with 'මි'."
+            }
+        },
+        {
+            "incorrect_sentence": "අපි කෑම කමි",
+            "correct_sentence": "අපි කෑම කමු",
+            "error_details": {
+                "type": "Subject-Verb Agreement Error",
+                "explanation": "Verb 'කමි' does not match the plural subject 'අපි'. It should end with 'මු'."
+            }
+        },
+        {
+            "incorrect_sentence": "මට පොතක් තියෙනවා",
+            "correct_sentence": "මට පොතක් තියෙන්නෙයි",
+            "error_details": {
+                "type": "Case Marker Error",
+                "explanation": "The correct marker for expressing possession is 'තියෙන්නෙයි'."
+            }
+        }
+    ]
+}
