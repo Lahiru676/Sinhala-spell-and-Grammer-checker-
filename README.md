@@ -46,33 +46,7 @@ The Spell and Grammar Checker is a tool designed to analyze and correct text by 
      checker.load_training_data("/content/drive/MyDrive/sinhala_grammar_training.json")
      ```
 
-## Usage
-### Example Code
-```python
-from grammar_checker import GrammarChecker
 
-def main():
-    # Initialize the GrammarChecker with your API key
-    checker = GrammarChecker(api_key=api_key)
-
-    # Load custom training data
-    checker.load_training_data("/path/to/training_data.json")
-
-    # Example: Single text analysis
-    text = "This is a exemple of bad grammer."
-    result = checker.check_grammar(text)
-    print(f"Input: {text}\n")
-    print(f"Analysis:\n{result}\n")
-
-    # Example: Batch processing
-    texts = ["He go to school yesterday.", "She dont like apple."]
-    results = checker.batch_check(texts)
-    for input_text, analysis in zip(texts, results):
-        print(f"Input: {input_text}\nAnalysis: {analysis}\n")
-
-if __name__ == "__main__":
-    main()
-```
 
 ### Outputs
 - **Input**: The original text provided.
@@ -81,14 +55,16 @@ if __name__ == "__main__":
 ## File Structure
 ```
 spell-and-grammar-checker/
-├── grammar_checker.py    # Core logic for spell and grammar checking
-├── training_data.json    # Example training data file
+├── AI_approch    # Core logic for spell and grammar checking
+├── Datasets.json    # Example training data file
 ├── requirements.txt      # Project dependencies
 ├── README.md             # Project documentation
 └── examples/             # Example scripts and usage scenarios
 ```
 
 ## Contributing
+https://github.com/Lahiru676  -2020E024
+https://github.com/Chamara23  -2019E022
 Contributions are welcome! If you'd like to improve the project, feel free to:
 1. Fork the repository.
 2. Create a feature branch.
